@@ -12,4 +12,3 @@ apt-get install -y \
 RUN usermod -g $(cat /etc/group | grep staff | cut -d: -f3) jenkins
 VOLUME /var/run/docker.sock
 USER jenkins
-# ENTRYPOINT s && /bin/tini -- /usr/local/bin/jenkins.sh
